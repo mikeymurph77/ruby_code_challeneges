@@ -24,12 +24,8 @@ class Hangman
   end
 
   def display_dashes
-    dashes = []
-    number_of_dashes = @selected_word.length
-    number_of_dashes.times do 
-      dashes << ["_ "]
-    end
-    p dashes.join
+    # number_of_dashes = @selected_word.length
+    p (["_ "] * @selected_word.length).join.strip
   end
 end
 
